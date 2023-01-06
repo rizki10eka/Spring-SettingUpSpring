@@ -2,9 +2,20 @@ package com.luv2code.springdemo;
 
 public class TrackCoach implements Coach {
 
+	private FortuneService fortuneService;
+	
+	public TrackCoach() {
+		
+	}
+	
+	public TrackCoach(FortuneService fortuneService) {
+		super();
+		this.fortuneService = fortuneService;
+	}
+
 	@Override
 	public String getDailyWorkout() {
-		return "Run a hard 5";
+		return "Run a hard 5 ";
 	}
 
 	@Override
@@ -13,4 +24,10 @@ public class TrackCoach implements Coach {
 		return "{Striker:One, Back Belakang: ['anti', 'anta', 'antu']}";
 	}
 
+	@Override
+	public String getDailyFortune() {
+		return fortuneService.getFortune();
+	}
+
+	
 }

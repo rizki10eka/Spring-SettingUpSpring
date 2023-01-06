@@ -8,19 +8,25 @@ public class BaseballCoach implements Coach{
 	
 	// constructor for inject
 	public BaseballCoach(FortuneService theFortuneService) {
-		fortuneService = theFortuneService;
+		super();
+		this.fortuneService = theFortuneService;
 	}
-	
+
 	public String getDailyWorkout() {
 		return "Spend 30 minutes on batting practic";
 	}
 
 	@Override
 	public String getSetupPlayer() {
-		
-		// use my fortune to get fortune
-		
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
 		return fortuneService.getFortune();
 	}
+
 
 }
