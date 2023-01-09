@@ -15,10 +15,10 @@ public class SpringHelloApp {
 		// call methods on the bean
 		System.out.println(theCoach.getDailyWorkout());
 		System.out.println(theCoach.getSetupPlayer());
+		System.out.println(theCoach.getFortune());
 		
 		// call new method for fortunes
 		System.out.println(theCoach.getDailyFortune());
-		
 		// close the context
 		context.close();
 	}

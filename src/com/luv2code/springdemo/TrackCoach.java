@@ -29,5 +29,12 @@ public class TrackCoach implements Coach {
 		return fortuneService.getFortune();
 	}
 
+	@Override
+	public String getFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
 	
 }

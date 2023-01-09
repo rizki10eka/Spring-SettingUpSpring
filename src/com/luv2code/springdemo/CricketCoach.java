@@ -56,4 +56,9 @@ public class CricketCoach implements Coach {
 		return fortuneService.getFortune();
 	}
 
+	@Override
+	public String getFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
